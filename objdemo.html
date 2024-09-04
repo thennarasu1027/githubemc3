@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        //Literals
+        var student={};
+        student.name='thennu';
+        student.age=20;
+        student.year=3;
+        student.class="maths";
+        console.log(student);
+        console.log("student Name: "+ student.name + " is "+ student.age + " years old..." );
+      
+        var student={
+            name:"thennu",age:20,year:3
+        }
+        console.log(student);
 
+
+        //instance of object
+          var teacher=new Object();
+          teacher.name="Baskaran";
+          teacher.age=45;
+          teacher.sub="Tamil";
+          teacher.sal=50000;
+          console.log(teacher);
+
+         //constructor
+         function princii( name,age,sal)
+         {
+            this.name=name;
+            this.age=age;
+            this.sal=sal;
+        
+         }
+         var p=new princii("Nobitta",60,100000);
+         console.log(p); 
+         var p1=new princii("Surendhar",50,200000);
+         console.log(p1); 
+    </script>
+</body>
+</html>
